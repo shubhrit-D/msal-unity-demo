@@ -5,14 +5,13 @@ using Microsoft.Identity.Client;
 public class GetAuthentication : MonoBehaviour
 {
     [SerializeField]
-    private string ClientID;    // client ID
-    [SerializeField]
     private InputField username;    // username
     [SerializeField]
     private InputField password;    // password
 
     private string userName;
     private string pswd;
+    private string ClientID;    // client ID
     private static string TenantID = "";    // Your Tenant ID
     private static string Authority = "https://login.microsoftonline.com/" + TenantID;
 
